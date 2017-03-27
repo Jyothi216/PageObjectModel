@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page object model with PageFactory">
+    <listeners>
+        <listener class-name="listener.customListeners"/>
+        <listener class-name="listener.ExtentReporterNG"/>          
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+            
+        </listeners>
+  <test name="Login with EMail">     
+      
+    <classes>
+           <class name="testcases.care.CareLoginTest"/>
+    </classes>
+   </test> <!-- Test -->
+   
+        
+  <test name="Add Tutor information">     
+      
+    <classes>
+           <class name="testcases.care.AddTutor"/>
+    </classes>
+   </test>
+</suite> <!-- Suite -->
